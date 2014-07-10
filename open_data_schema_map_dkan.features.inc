@@ -29,7 +29,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'name' => array(
-        'value' => '[node:url:path]',
+        'value' => '[node:url:arg:last]',
         'type' => 'string',
       ),
       'title' => array(
