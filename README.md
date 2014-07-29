@@ -6,3 +6,4 @@ Default Open Data Schema Map endpoints for DKAN. Includes CKAN and Project Open 
 Includes the following endpoints:
 
 * data.json (project open data)
+* ckan_package_show (ckan)
