@@ -29,7 +29,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'name' => array(
-        'value' => '[node:url:arg:last]',
+        'value' => '[node:url:args:last]',
         'type' => 'string',
       ),
       'title' => array(
@@ -145,7 +145,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
           'value' => 'Active',
           'type' => '',
         ),
-        'position' => array(
+        'Position' => array(
           'value' => '',
           'type' => '',
         ),
@@ -289,11 +289,11 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'arguments' => array(
       1 => array(
         'field' => 'name',
-        'value' => '',
+        'required' => 0,
       ),
       2 => array(
         'field' => 'id',
-        'value' => '',
+        'required' => 0,
       ),
     ),
   );
@@ -432,7 +432,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
           'value' => '',
           'type' => '',
         ),
-        'position' => array(
+        'Position' => array(
           'value' => '',
           'type' => '',
         ),
