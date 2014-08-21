@@ -710,7 +710,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
           'type' => '',
         ),
         'name' => array(
-          'value' => '[node:field-resources:Nth:url:path]',
+          'value' => '[node:field-resources:Nth:title]',
           'type' => '',
         ),
         'resource_type' => array(
