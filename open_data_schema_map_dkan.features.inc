@@ -15,7 +15,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'name' => 'CKAN Current Package List With Resources',
     'enabled' => 1,
     'machine_name' => 'ckan_current_package_list_with_resources',
-    'api_schema' => 'ckan',
+    'api_schema' => 'ckan_dataset',
     'description' => NULL,
     'type' => 'node',
     'bundle' => 'dataset',
@@ -286,14 +286,24 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
       ),
     ),
     'endpoint' => 'api/3/action/current_package_list_with_resources',
-    'arguments' => array(),
+    'arguments' => array(
+      1 => array(
+        'field' => 'limit',
+        'required' => 0,
+        'value' => '',
+      ),
+      2 => array(
+        'field' => 'offset',
+        'required' => 0,
+      ),
+    ),
   );
   // Exported Open Data API Map: CKAN Group List
   $open_data_schema_apis['ckan_group_list'] = array(
     'name' => 'CKAN Group List',
     'enabled' => 1,
     'machine_name' => 'ckan_group_list',
-    'api_schema' => 'ckan',
+    'api_schema' => 'ckan_dataset',
     'description' => NULL,
     'type' => 'node',
     'bundle' => 'group',
@@ -571,7 +581,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'name' => 'CKAN Package List',
     'enabled' => 1,
     'machine_name' => 'ckan_package_list',
-    'api_schema' => 'ckan',
+    'api_schema' => 'ckan_dataset',
     'description' => NULL,
     'type' => 'node',
     'bundle' => 'dataset',
@@ -849,7 +859,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'name' => 'CKAN Package Show',
     'enabled' => 1,
     'machine_name' => 'ckan_package_show',
-    'api_schema' => 'ckan',
+    'api_schema' => 'ckan_dataset',
     'description' => NULL,
     'type' => 'node',
     'bundle' => 'dataset',
@@ -1127,6 +1137,113 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
       ),
       2 => array(
         'field' => 'id',
+        'required' => 0,
+      ),
+    ),
+  );
+  // Exported Open Data API Map: CKAN Resource Show
+  $open_data_schema_apis['ckan_resource_show'] = array(
+    'name' => 'CKAN Resource Show',
+    'enabled' => 1,
+    'machine_name' => 'ckan_resource_show',
+    'api_schema' => 'ckan_resource',
+    'description' => NULL,
+    'type' => 'node',
+    'bundle' => 'resource',
+    'mapping' => array(
+      'id' => array(
+        'value' => '[node:uuid]',
+        'type' => 'string',
+      ),
+      'revision_id' => array(
+        'value' => '[node:vuuid]',
+        'type' => 'string',
+      ),
+      'url' => array(
+        'value' => '[node:url]',
+        'type' => 'string',
+      ),
+      'description' => array(
+        'value' => '[node:body]',
+        'type' => 'string',
+      ),
+      'format' => array(
+        'value' => '[node:field_format]',
+        'type' => 'string',
+      ),
+      'hash' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'state' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'Position' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'revision_timestamp' => array(
+        'value' => '[node:changed]',
+        'type' => 'string',
+      ),
+      'name' => array(
+        'value' => '[node:title]',
+        'type' => 'string',
+      ),
+      'resource_type' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'url_type' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'mimetype' => array(
+        'value' => '[node:field-upload:mime] || [node:field_format]',
+        'type' => 'string',
+      ),
+      'webstore_url' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'size' => array(
+        'value' => '[node:field-upload:size]',
+        'type' => 'string',
+      ),
+      'created' => array(
+        'value' => '[node:created]',
+        'type' => 'string',
+      ),
+      'resource_group_id' => array(
+        'value' => '[node:og-group-ref:0:uuid]',
+        'type' => 'string',
+      ),
+      'cache_last_updated' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'webstore_last_updated' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'datastore_active' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'last_modified' => array(
+        'value' => 'Date changed	[node:changed]',
+        'type' => 'string',
+      ),
+    ),
+    'endpoint' => 'api/3/action/resource_show',
+    'arguments' => array(
+      1 => array(
+        'field' => 'id',
+        'required' => 0,
+      ),
+      2 => array(
+        'field' => 'name',
         'required' => 0,
       ),
     ),
