@@ -576,6 +576,289 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'endpoint' => 'api/3/action/group_list',
     'arguments' => array(),
   );
+  // Exported Open Data API Map: CKAN Group Package Show
+  $open_data_schema_apis['ckan_group_package_show'] = array(
+    'name' => 'CKAN Group Package Show',
+    'enabled' => 1,
+    'machine_name' => 'ckan_group_package_show',
+    'api_schema' => 'ckan_dataset',
+    'description' => NULL,
+    'type' => 'node',
+    'bundle' => 'dataset',
+    'mapping' => array(
+      'id' => array(
+        'value' => '[node:uuid]',
+        'type' => 'string',
+      ),
+      'revision_id' => array(
+        'value' => '[node:vuuid]',
+        'type' => 'string',
+      ),
+      'name' => array(
+        'value' => '[node:url:args:last]',
+        'type' => 'string',
+      ),
+      'title' => array(
+        'value' => '[node:title]',
+        'type' => 'string',
+      ),
+      'author' => array(
+        'value' => '[node:field_author]',
+        'type' => 'string',
+      ),
+      'author_email' => array(
+        'value' => '[node:field-contact-email]',
+        'type' => 'string',
+      ),
+      'maintainer' => array(
+        'value' => '[site:name]',
+        'type' => 'string',
+      ),
+      'maintainer_email' => array(
+        'value' => '[site:mail]',
+        'type' => 'string',
+      ),
+      'license_title' => array(
+        'value' => '[node:field_license]',
+        'type' => 'string',
+      ),
+      'license_id' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'notes' => array(
+        'value' => '[node:body]',
+        'type' => 'string',
+      ),
+      'url' => array(
+        'value' => '[node:url]',
+        'type' => 'string',
+      ),
+      'version' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'state' => array(
+        'value' => 'Active',
+        'type' => 'string',
+      ),
+      'owner_org' => array(
+        'value' => '',
+        'type' => 'string',
+      ),
+      'log_message' => array(
+        'value' => '[node:log]',
+        'type' => 'string',
+      ),
+      'private' => array(
+        'value' => '[node:status]',
+        'type' => 'boolean',
+      ),
+      'relationships_as_object' => array(
+        'value' => '',
+        'type' => 'object',
+      ),
+      'revision_timestamp' => array(
+        'value' => '[node:changed]',
+        'type' => 'string',
+      ),
+      'metadata_created' => array(
+        'value' => '[node:created]',
+        'type' => 'string',
+      ),
+      'metadata_modified' => array(
+        'value' => '[node:changed]',
+        'type' => 'string',
+      ),
+      'creator_user_id' => array(
+        'value' => '[node:author:uuid]',
+        'type' => 'string',
+      ),
+      'type' => array(
+        'value' => 'Dataset',
+        'type' => 'string',
+      ),
+      'resources' => array(
+        'odsm_entity_reference' => array(
+          'value' => 'field_resources',
+          'type' => '',
+        ),
+        'id' => array(
+          'value' => '[node:field-resources:Nth:uuid]',
+          'type' => '',
+        ),
+        'revision_id' => array(
+          'value' => '[node:field-resources:Nth:vuuid]',
+          'type' => '',
+        ),
+        'url' => array(
+          'value' => '[node:field-resources:Nth:url]',
+          'type' => '',
+        ),
+        'description' => array(
+          'value' => '[node:field-resources:Nth:body]',
+          'type' => '',
+        ),
+        'format' => array(
+          'value' => '[node:field-resources:Nth:field_format]',
+          'type' => '',
+        ),
+        'hash' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'state' => array(
+          'value' => '[node:field-resources:Nth:state]',
+          'type' => '',
+        ),
+        'Position' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'revision_timestamp' => array(
+          'value' => '[node:field-resources:Nth:changed]',
+          'type' => '',
+        ),
+        'name' => array(
+          'value' => '[node:field-resources:Nth:title]',
+          'type' => '',
+        ),
+        'resource_type' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'url_type' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'mimetype' => array(
+          'value' => '[node:field-resources:Nth:field-upload:mime] || [node:field-resources:Nth:field_format]',
+          'type' => '',
+        ),
+        'webstore_url' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'size' => array(
+          'value' => '[node:field-resources:Nth:field-upload:size]',
+          'type' => '',
+        ),
+        'created' => array(
+          'value' => '[node:field-resources:Nth:created]',
+          'type' => '',
+        ),
+        'resource_group_id' => array(
+          'value' => '[node:field-resources:Nth:og-group-ref:0:uuid]',
+          'type' => '',
+        ),
+        'cache_last_updated' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'webstore_last_updated' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'datastore_active' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'last_modified' => array(
+          'value' => 'Date changed	[node:field-resources:Nth:changed]',
+          'type' => '',
+        ),
+      ),
+      'tags' => array(
+        'odsm_entity_reference' => array(
+          'value' => 'field_tags',
+          'type' => '',
+        ),
+        'id' => array(
+          'value' => '[node:field-tags:Nth:uuid]',
+          'type' => '',
+        ),
+        'vocabulary_id' => array(
+          'value' => '[node:field-tags:Nth:vocabulary:vid]',
+          'type' => '',
+        ),
+        'name' => array(
+          'value' => '[node:field-tags:Nth:name]',
+          'type' => '',
+        ),
+        'revision_timestamp' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'state' => array(
+          'value' => '',
+          'type' => '',
+        ),
+      ),
+      'groups' => array(
+        'odsm_entity_reference' => array(
+          'value' => 'og_group_ref',
+          'type' => '',
+        ),
+        'display_name' => array(
+          'value' => '[node:title]',
+          'type' => '',
+        ),
+        'description' => array(
+          'value' => '[node:og-group-ref:Nth:body]',
+          'type' => '',
+        ),
+        'id' => array(
+          'value' => '[node:og-group-ref:Nth:uuid]',
+          'type' => '',
+        ),
+        'image_display_url' => array(
+          'value' => '[node:og-group-ref:Nth:field_image]',
+          'type' => '',
+        ),
+        'title' => array(
+          'value' => '[node:og-group-ref:Nth:title]',
+          'type' => '',
+        ),
+        'name' => array(
+          'value' => '[node:url:args:last]',
+          'type' => '',
+        ),
+      ),
+      'extras' => array(
+        'odsm_entity_reference' => array(
+          'value' => 'field_additional_info',
+          'type' => '',
+        ),
+        'id' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'key' => array(
+          'value' => '[node:field-additional-info:Nth:first]',
+          'type' => '',
+        ),
+        'value' => array(
+          'value' => '[node:field-additional-info:Nth:second]',
+          'type' => '',
+        ),
+        'state' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'revision_timestamp' => array(
+          'value' => '',
+          'type' => '',
+        ),
+      ),
+    ),
+    'endpoint' => 'api/3/action/group_package_show',
+    'arguments' => array(
+      1 => array(
+        'field' => 'id',
+        'required' => 0,
+      ),
+    ),
+  );
   // Exported Open Data API Map: CKAN Package List
   $open_data_schema_apis['ckan_package_list'] = array(
     'name' => 'CKAN Package List',
