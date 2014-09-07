@@ -855,7 +855,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'arguments' => array(
       1 => array(
         'field' => 'id',
-        'required' => 0,
+        'required' => 1,
       ),
     ),
   );
@@ -1523,7 +1523,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'arguments' => array(
       1 => array(
         'field' => 'id',
-        'required' => 0,
+        'required' => 1,
       ),
       2 => array(
         'field' => 'name',
