@@ -1135,7 +1135,17 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
       ),
     ),
     'endpoint' => 'api/3/action/package_list',
-    'arguments' => array(),
+    'arguments' => array(
+      1 => array(
+        'field' => 'limit',
+        'required' => 0,
+        'value' => '',
+      ),
+      2 => array(
+        'field' => 'offset',
+        'required' => 0,
+      ),
+    ),
   );
   // Exported Open Data API Map: CKAN Package Show
   $open_data_schema_apis['ckan_package_show'] = array(
