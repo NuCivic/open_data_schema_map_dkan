@@ -1708,7 +1708,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'bureauCode' => array(
-        'value' => '018:10',
+        'value' => '',
         'type' => 'array',
       ),
       'contactPoint' => array(
@@ -1824,7 +1824,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'programCode' => array(
-        'value' => '018:001',
+        'value' => '',
         'type' => 'array',
       ),
       'publisher' => array(
