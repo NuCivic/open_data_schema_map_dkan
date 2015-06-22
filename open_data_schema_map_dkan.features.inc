@@ -285,6 +285,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/current_package_list_with_resources',
     'arguments' => array(
       1 => array(
@@ -573,6 +574,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/group_list',
     'arguments' => array(),
   );
@@ -851,6 +853,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/group_package_show',
     'arguments' => array(
       1 => array(
@@ -1134,6 +1137,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/package_list',
     'arguments' => array(
       1 => array(
@@ -1422,6 +1426,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/package_show',
     'arguments' => array(
       1 => array(
@@ -1529,6 +1534,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'api/3/action/resource_show',
     'arguments' => array(
       1 => array(
@@ -1678,6 +1684,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'data.json',
     'arguments' => array(),
   );
@@ -1870,6 +1877,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
     ),
+    'outputformat' => 'json',
     'endpoint' => 'data.json',
     'arguments' => array(),
   );
