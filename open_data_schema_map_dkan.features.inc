@@ -1762,7 +1762,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
           'type' => '',
         ),
         'downloadURL' => array(
-          'value' => '[node:field-resources:Nth:field-link-api:url] || [node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
+          'value' => '[node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
           'type' => '',
         ),
         'mediaType' => array(
@@ -1774,7 +1774,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
           'type' => '',
         ),
         'accessURL' => array(
-          'value' => '[node:field-resources:Nth:field-link-api:url] || [node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
+          'value' => '[node:field-resources:Nth:field-link-api:url]',
           'type' => '',
         ),
         'description' => array(
@@ -1783,18 +1783,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
         'title' => array(
           'value' => '[node:field-resources:Nth:title]',
-          'type' => '',
-        ),
-        'conformsTo' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'describedBy' => array(
-          'value' => '[node:field-data-dictionary]',
-          'type' => '',
-        ),
-        'describedByType' => array(
-          'value' => '[node:field_odfe_data_dictionary_type]',
           'type' => '',
         ),
       ),
