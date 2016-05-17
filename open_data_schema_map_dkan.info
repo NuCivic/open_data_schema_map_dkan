@@ -7,6 +7,7 @@ dependencies[] = dkan_dataset_content_types
 dependencies[] = entity_token
 dependencies[] = open_data_schema_ckan
 dependencies[] = open_data_schema_map
+dependencies[] = open_data_schema_map_xml_output
 dependencies[] = open_data_schema_pod
 dependencies[] = token
 features[features_api][] = api:2
