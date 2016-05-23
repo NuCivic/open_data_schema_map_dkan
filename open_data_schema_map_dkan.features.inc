@@ -2057,9 +2057,14 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     ),
     'outputformat' => 'xml',
     'endpoint' => 'catalog.xml',
-    'arguments' => array(),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
+    'arguments' => array(
+      1 => array(
+        'field' => 'dct:identifier',
+        'required' => 0,
+      ),
+    ),
+    'xml_root' => 'rdf:RDF',
+    'xml_defaulttag' => 'dcat:Dataset',
   );
   return $open_data_schema_apis;
 }
