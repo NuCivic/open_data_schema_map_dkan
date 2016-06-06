@@ -1993,16 +1993,44 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'dct:temporal' => array(
-        'value' => '[node:field-temporal-coverage:value:custom:c]/[node:field-temporal-coverage:value2:custom:c]',
-        'type' => 'string',
+        'odsm_entity_reference' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'schema:startDate' => array(
+          'value' => '[node:field-temporal-coverage:value:custom:c]',
+          'type' => '',
+        ),
+        'schema:endDate' => array(
+          'value' => '[node:field-temporal-coverage:value2:custom:c]',
+          'type' => '',
+        ),
       ),
       'dct:publisher' => array(
         'value' => '[node:og_group_ref]',
         'type' => 'string',
       ),
       'dcat:contactPoint' => array(
-        'value' => '',
-        'type' => 'string',
+        'odsm_entity_reference' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'vcard:fn' => array(
+          'value' => '[node:field-contact-name]',
+          'type' => '',
+        ),
+        'vcard:hasTelephone' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'vcard:hasEmail' => array(
+          'value' => '[node:field-contact-email]',
+          'type' => '',
+        ),
+        'vcard:hasURL' => array(
+          'value' => '',
+          'type' => '',
+        ),
       ),
       'dcat:Distribution' => array(
         'odsm_entity_reference' => array(
@@ -2169,16 +2197,44 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'dct:temporal' => array(
-        'value' => '[node:field-temporal-coverage:value:custom:c]/[node:field-temporal-coverage:value2:custom:c]',
-        'type' => 'string',
+        'odsm_entity_reference' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'schema:startDate' => array(
+          'value' => '[node:field-temporal-coverage:value:custom:c]',
+          'type' => '',
+        ),
+        'schema:endDate' => array(
+          'value' => '[node:field-temporal-coverage:value2:custom:c]',
+          'type' => '',
+        ),
       ),
       'dct:publisher' => array(
         'value' => '[node:og_group_ref]',
         'type' => 'string',
       ),
       'dcat:contactPoint' => array(
-        'value' => '',
-        'type' => 'string',
+        'odsm_entity_reference' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'vcard:fn' => array(
+          'value' => '[node:field-contact-name]',
+          'type' => '',
+        ),
+        'vcard:hasTelephone' => array(
+          'value' => '',
+          'type' => '',
+        ),
+        'vcard:hasEmail' => array(
+          'value' => '[node:field-contact-email]',
+          'type' => '',
+        ),
+        'vcard:hasURL' => array(
+          'value' => '',
+          'type' => '',
+        ),
       ),
       'dcat:Distribution' => array(
         'odsm_entity_reference' => array(
