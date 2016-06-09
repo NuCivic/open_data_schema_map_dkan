@@ -1713,7 +1713,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'bundle' => 'dataset',
     'mapping' => array(
       '@type' => array(
-        'value' => 'dcat:Dataset',
+        'value' => 'dcat:dataset',
         'type' => 'string',
       ),
       'accessLevel' => array(
@@ -2092,7 +2092,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
       ),
     ),
     'xml_root' => 'rdf:RDF',
-    'xml_defaulttag' => 'dcat:Dataset',
+    'xml_defaulttag' => 'dcat:dataset',
   );
   // Exported Open Data API Map: DCAT-AP v1.1
   $open_data_schema_apis['dcat_v1_1'] = array(
@@ -2291,7 +2291,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'endpoint' => 'catalog.xml',
     'arguments' => array(),
     'xml_root' => 'rdf:RDF',
-    'xml_defaulttag' => 'dcat:Dataset',
+    'xml_defaulttag' => 'dcat:dataset',
   );
   return $open_data_schema_apis;
 }
