@@ -1960,10 +1960,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'value' => '[node:field_odfe_rights]',
         'type' => 'string',
       ),
-      'foaf:page' => array(
-        'value' => 'org:Organization',
-        'type' => 'array',
-      ),
       'dct:provenance' => array(
         'value' => '',
         'type' => 'string',
@@ -2079,6 +2075,10 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
         'dcat:byteSize' => array(
           'value' => '[node:field-resources:Nth:field-upload:size-raw]',
+          'type' => '',
+        ),
+        'foaf:page' => array(
+          'value' => '[node:field-resources:Nth:url]',
           'type' => '',
         ),
       ),
@@ -2164,10 +2164,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'value' => '[node:field_odfe_rights]',
         'type' => 'string',
       ),
-      'foaf:page' => array(
-        'value' => 'org:Organization',
-        'type' => 'array',
-      ),
       'dct:provenance' => array(
         'value' => '',
         'type' => 'string',
@@ -2283,6 +2279,10 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
         'dcat:byteSize' => array(
           'value' => '[node:field-resources:Nth:field-upload:size-raw]',
+          'type' => '',
+        ),
+        'foaf:page' => array(
+          'value' => '[node:field-resources:Nth:url]',
           'type' => '',
         ),
       ),
@@ -2363,10 +2363,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'value' => '[node:field_odfe_rights]',
         'type' => 'string',
       ),
-      'foaf:page' => array(
-        'value' => 'org:Organization',
-        'type' => 'array',
-      ),
       'dct:provenance' => array(
         'value' => '',
         'type' => 'string',
@@ -2482,6 +2478,10 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         ),
         'dcat:byteSize' => array(
           'value' => '[node:field-resources:Nth:field-upload:size-raw]',
+          'type' => '',
+        ),
+        'foaf:page' => array(
+          'value' => '[node:field-resources:Nth:url]',
           'type' => '',
         ),
       ),
