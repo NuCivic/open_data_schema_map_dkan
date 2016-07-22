@@ -1805,7 +1805,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'issued' => array(
-        'value' => '[node:created]',
+        'value' => '[node:created:custom:Y-m-d]',
         'type' => 'string',
       ),
       'keyword' => array(
@@ -1925,7 +1925,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'dct:issued' => array(
-        'value' => '[node:created]',
+        'value' => '[node:created:custom:Y-m-d]',
         'type' => 'string',
       ),
       'dct:modified' => array(
@@ -2129,7 +2129,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'dct:issued' => array(
-        'value' => '[node:created]',
+        'value' => '[node:created:custom:Y-m-d]',
         'type' => 'string',
       ),
       'dct:modified' => array(
@@ -2328,7 +2328,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'dct:issued' => array(
-        'value' => '[node:created]',
+        'value' => '[node:created:custom:Y-m-d]',
         'type' => 'string',
       ),
       'dct:modified' => array(
