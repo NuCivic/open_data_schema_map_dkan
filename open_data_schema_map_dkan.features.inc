@@ -1857,7 +1857,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'theme' => array(
-        'value' => '[node:field_category]',
+        'value' => '[node:field_category] || [node:field_topic]',
         'type' => 'array',
       ),
       'title' => array(
