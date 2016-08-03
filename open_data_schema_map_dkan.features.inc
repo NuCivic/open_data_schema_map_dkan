@@ -298,8 +298,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 0,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: CKAN Group List
   $open_data_schema_apis['ckan_group_list'] = array(
@@ -579,8 +577,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'outputformat' => 'json',
     'endpoint' => 'api/3/action/group_list',
     'arguments' => array(),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: CKAN Group Package Show
   $open_data_schema_apis['ckan_group_package_show'] = array(
@@ -865,8 +861,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 1,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: CKAN Package List
   $open_data_schema_apis['ckan_package_list'] = array(
@@ -1156,8 +1150,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 0,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: CKAN Package Show
   $open_data_schema_apis['ckan_package_show'] = array(
@@ -1446,8 +1438,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 1,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: CKAN Resource Show
   $open_data_schema_apis['ckan_resource_show'] = array(
@@ -1556,8 +1546,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 0,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: Data.json
   $open_data_schema_apis['data_json'] = array(
@@ -1699,8 +1687,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'outputformat' => 'json',
     'endpoint' => 'data.json',
     'arguments' => array(),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
   );
   // Exported Open Data API Map: Data Json 1.1
   $open_data_schema_apis['data_json_1_1'] = array(
@@ -1713,7 +1699,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
     'bundle' => 'dataset',
     'mapping' => array(
       '@type' => array(
-        'value' => 'dcat:dataset',
+        'value' => 'dcat:Dataset',
         'type' => 'string',
       ),
       'accessLevel' => array(
@@ -1805,7 +1791,7 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'type' => 'string',
       ),
       'issued' => array(
-        'value' => '[node:created:custom:Y-m-d]',
+        'value' => '[node:created]',
         'type' => 'string',
       ),
       'keyword' => array(
@@ -1887,610 +1873,6 @@ function open_data_schema_map_dkan_open_data_schema_apis_defaults() {
         'required' => 0,
       ),
     ),
-    'xml_root' => 'records',
-    'xml_defaulttag' => 'record',
-  );
-  // Exported Open Data API Map: DCAT-AP v1.1 (Dataset)
-  $open_data_schema_apis['dcat_ap_v1_1_dataset'] = array(
-    'name' => 'DCAT-AP v1.1 (Dataset)',
-    'enabled' => 1,
-    'machine_name' => 'dcat_ap_v1_1_dataset',
-    'api_schema' => 'dcat_dataset',
-    'description' => NULL,
-    'type' => 'node',
-    'bundle' => 'dataset',
-    'mapping' => array(
-      '@rdf:about' => array(
-        'value' => '[node:url]',
-        'type' => 'string',
-      ),
-      'dct:title' => array(
-        'value' => '[node:title]',
-        'type' => 'string',
-      ),
-      'dct:description' => array(
-        'value' => '[node:body]',
-        'type' => 'string',
-      ),
-      'dcat:keyword' => array(
-        'value' => '[node:field-tags]',
-        'type' => 'array',
-      ),
-      'dcat:theme' => array(
-        'value' => '[node:field_odfe_category]',
-        'type' => 'string',
-      ),
-      'dct:identifier' => array(
-        'value' => '[node:uuid]',
-        'type' => 'string',
-      ),
-      'dct:issued' => array(
-        'value' => '[node:created:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'dct:modified' => array(
-        'value' => '[node:changed:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'owl:versionInfo' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'adms:versionNotes' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:language' => array(
-        'value' => '[node:field_odfe_language]',
-        'type' => 'array',
-      ),
-      'dcat:landingPage' => array(
-        'value' => '[node:field_odfe_landing_page:url]',
-        'type' => 'string',
-      ),
-      'dct:accrualPeriodicity' => array(
-        'value' => '[node:field-frequency]',
-        'type' => 'string',
-      ),
-      'dct:conformsTo' => array(
-        'value' => '[node:field-odfe-conforms-to:url]',
-        'type' => 'array',
-      ),
-      'dct:accessRights' => array(
-        'value' => '[node:field_odfe_rights]',
-        'type' => 'string',
-      ),
-      'dct:provenance' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:type' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:hasVersion' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:isVersionOf' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:source' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'adms:sample' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:spatial' => array(
-        'value' => '[node:field_spatial]',
-        'type' => 'string',
-      ),
-      'dct:temporal' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'schema:startDate' => array(
-          'value' => '[node:field-temporal-coverage:value:custom:c]',
-          'type' => '',
-        ),
-        'schema:endDate' => array(
-          'value' => '[node:field-temporal-coverage:value2:custom:c]',
-          'type' => '',
-        ),
-      ),
-      'dct:publisher' => array(
-        'value' => '[node:og_group_ref]',
-        'type' => 'string',
-      ),
-      'dcat:contactPoint' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:fn' => array(
-          'value' => '[node:field-contact-name]',
-          'type' => '',
-        ),
-        'vcard:hasTelephone' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:hasEmail' => array(
-          'value' => '[node:field-contact-email]',
-          'type' => '',
-        ),
-        'vcard:hasURL' => array(
-          'value' => '',
-          'type' => '',
-        ),
-      ),
-      'dcat:Distribution' => array(
-        'odsm_entity_reference' => array(
-          'value' => 'field_resources',
-          'type' => '',
-        ),
-        'dct:title' => array(
-          'value' => '[node:field-resources:Nth:title]',
-          'type' => '',
-        ),
-        'dct:description' => array(
-          'value' => '[node:field-resources:Nth:body]',
-          'type' => '',
-        ),
-        'dct:issued' => array(
-          'value' => '[node:field-resources:Nth:created:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:modified' => array(
-          'value' => '[node:field-resources:Nth:changed:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:license' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dct:rights' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dcat:accessURL' => array(
-          'value' => '[node:field-resources:Nth:field-link-api:url]',
-          'type' => '',
-        ),
-        'dcat:downloadURL' => array(
-          'value' => '[node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
-          'type' => '',
-        ),
-        'dcat:mediaType' => array(
-          'value' => '[node:field-resources:Nth:field-upload:mime]',
-          'type' => '',
-        ),
-        'dct:format' => array(
-          'value' => '[node:field-resources:Nth:field-format:name]',
-          'type' => '',
-        ),
-        'dcat:byteSize' => array(
-          'value' => '[node:field-resources:Nth:field-upload:size-raw]',
-          'type' => '',
-        ),
-        'foaf:page' => array(
-          'value' => '[node:field-resources:Nth:url]',
-          'type' => '',
-        ),
-      ),
-    ),
-    'outputformat' => 'xml',
-    'endpoint' => 'catalog/dataset.xml',
-    'arguments' => array(
-      1 => array(
-        'field' => 'dct:identifier',
-        'required' => 1,
-      ),
-    ),
-    'xml_root' => 'rdf:RDF',
-    'xml_defaulttag' => 'dcat:dataset',
-  );
-  // Exported Open Data API Map: DCAT-AP v1.1
-  $open_data_schema_apis['dcat_v1_1'] = array(
-    'name' => 'DCAT-AP v1.1',
-    'enabled' => 1,
-    'machine_name' => 'dcat_v1_1',
-    'api_schema' => 'dcat',
-    'description' => NULL,
-    'type' => 'node',
-    'bundle' => 'dataset',
-    'mapping' => array(
-      '@rdf:about' => array(
-        'value' => '[node:url]',
-        'type' => 'string',
-      ),
-      'dct:title' => array(
-        'value' => '[node:title]',
-        'type' => 'string',
-      ),
-      'dct:description' => array(
-        'value' => '[node:body]',
-        'type' => 'string',
-      ),
-      'dcat:keyword' => array(
-        'value' => '[node:field-tags]',
-        'type' => 'array',
-      ),
-      'dcat:theme' => array(
-        'value' => '[node:field_odfe_category]',
-        'type' => 'string',
-      ),
-      'dct:identifier' => array(
-        'value' => '[node:uuid]',
-        'type' => 'string',
-      ),
-      'dct:issued' => array(
-        'value' => '[node:created:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'dct:modified' => array(
-        'value' => '[node:changed:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'owl:versionInfo' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'adms:versionNotes' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:language' => array(
-        'value' => '[node:field_odfe_language]',
-        'type' => 'array',
-      ),
-      'dcat:landingPage' => array(
-        'value' => '[node:field_odfe_landing_page:url]',
-        'type' => 'string',
-      ),
-      'dct:accrualPeriodicity' => array(
-        'value' => '[node:field-frequency]',
-        'type' => 'string',
-      ),
-      'dct:conformsTo' => array(
-        'value' => '[node:field-odfe-conforms-to:url]',
-        'type' => 'array',
-      ),
-      'dct:accessRights' => array(
-        'value' => '[node:field_odfe_rights]',
-        'type' => 'string',
-      ),
-      'dct:provenance' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:type' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:hasVersion' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:isVersionOf' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:source' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'adms:sample' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:spatial' => array(
-        'value' => '[node:field_spatial]',
-        'type' => 'string',
-      ),
-      'dct:temporal' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'schema:startDate' => array(
-          'value' => '[node:field-temporal-coverage:value:custom:c]',
-          'type' => '',
-        ),
-        'schema:endDate' => array(
-          'value' => '[node:field-temporal-coverage:value2:custom:c]',
-          'type' => '',
-        ),
-      ),
-      'dct:publisher' => array(
-        'value' => '[node:og_group_ref]',
-        'type' => 'string',
-      ),
-      'dcat:contactPoint' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:fn' => array(
-          'value' => '[node:field-contact-name]',
-          'type' => '',
-        ),
-        'vcard:hasTelephone' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:hasEmail' => array(
-          'value' => '[node:field-contact-email]',
-          'type' => '',
-        ),
-        'vcard:hasURL' => array(
-          'value' => '',
-          'type' => '',
-        ),
-      ),
-      'dcat:Distribution' => array(
-        'odsm_entity_reference' => array(
-          'value' => 'field_resources',
-          'type' => '',
-        ),
-        'dct:title' => array(
-          'value' => '[node:field-resources:Nth:title]',
-          'type' => '',
-        ),
-        'dct:description' => array(
-          'value' => '[node:field-resources:Nth:body]',
-          'type' => '',
-        ),
-        'dct:issued' => array(
-          'value' => '[node:field-resources:Nth:created:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:modified' => array(
-          'value' => '[node:field-resources:Nth:changed:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:license' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dct:rights' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dcat:accessURL' => array(
-          'value' => '[node:field-resources:Nth:field-link-api:url]',
-          'type' => '',
-        ),
-        'dcat:downloadURL' => array(
-          'value' => '[node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
-          'type' => '',
-        ),
-        'dcat:mediaType' => array(
-          'value' => '[node:field-resources:Nth:field-upload:mime]',
-          'type' => '',
-        ),
-        'dct:format' => array(
-          'value' => '[node:field-resources:Nth:field-format:name]',
-          'type' => '',
-        ),
-        'dcat:byteSize' => array(
-          'value' => '[node:field-resources:Nth:field-upload:size-raw]',
-          'type' => '',
-        ),
-        'foaf:page' => array(
-          'value' => '[node:field-resources:Nth:url]',
-          'type' => '',
-        ),
-      ),
-    ),
-    'outputformat' => 'xml',
-    'endpoint' => 'catalog.xml',
-    'arguments' => array(),
-    'xml_root' => 'rdf:RDF',
-    'xml_defaulttag' => 'dcat:dataset',
-  );
-  // Exported Open Data API Map: DCAT-AP v1.1 (JSON)
-  $open_data_schema_apis['dcat_v1_1_json'] = array(
-    'name' => 'DCAT-AP v1.1 (JSON)',
-    'enabled' => 1,
-    'machine_name' => 'dcat_v1_1_json',
-    'api_schema' => 'dcat',
-    'description' => NULL,
-    'type' => 'node',
-    'bundle' => 'dataset',
-    'mapping' => array(
-      '@rdf:about' => array(
-        'value' => '[node:url]',
-        'type' => 'string',
-      ),
-      'dct:title' => array(
-        'value' => '[node:title]',
-        'type' => 'string',
-      ),
-      'dct:description' => array(
-        'value' => '[node:body]',
-        'type' => 'string',
-      ),
-      'dcat:keyword' => array(
-        'value' => '[node:field-tags]',
-        'type' => 'array',
-      ),
-      'dcat:theme' => array(
-        'value' => '[node:field_odfe_category]',
-        'type' => 'string',
-      ),
-      'dct:identifier' => array(
-        'value' => '[node:uuid]',
-        'type' => 'string',
-      ),
-      'dct:issued' => array(
-        'value' => '[node:created:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'dct:modified' => array(
-        'value' => '[node:changed:custom:Y-m-d]',
-        'type' => 'string',
-      ),
-      'owl:versionInfo' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'adms:versionNotes' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:language' => array(
-        'value' => '[node:field_odfe_language]',
-        'type' => 'array',
-      ),
-      'dcat:landingPage' => array(
-        'value' => '[node:field_odfe_landing_page:url]',
-        'type' => 'string',
-      ),
-      'dct:accrualPeriodicity' => array(
-        'value' => '[node:field-frequency]',
-        'type' => 'string',
-      ),
-      'dct:conformsTo' => array(
-        'value' => '[node:field-odfe-conforms-to:url]',
-        'type' => 'array',
-      ),
-      'dct:accessRights' => array(
-        'value' => '[node:field_odfe_rights]',
-        'type' => 'string',
-      ),
-      'dct:provenance' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:type' => array(
-        'value' => '',
-        'type' => 'string',
-      ),
-      'dct:hasVersion' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:isVersionOf' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:source' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'adms:sample' => array(
-        'value' => '',
-        'type' => 'array',
-      ),
-      'dct:spatial' => array(
-        'value' => '[node:field_spatial]',
-        'type' => 'string',
-      ),
-      'dct:temporal' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'schema:startDate' => array(
-          'value' => '[node:field-temporal-coverage:value:custom:c]',
-          'type' => '',
-        ),
-        'schema:endDate' => array(
-          'value' => '[node:field-temporal-coverage:value2:custom:c]',
-          'type' => '',
-        ),
-      ),
-      'dct:publisher' => array(
-        'value' => '[node:og_group_ref]',
-        'type' => 'string',
-      ),
-      'dcat:contactPoint' => array(
-        'odsm_entity_reference' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:fn' => array(
-          'value' => '[node:field-contact-name]',
-          'type' => '',
-        ),
-        'vcard:hasTelephone' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'vcard:hasEmail' => array(
-          'value' => '[node:field-contact-email]',
-          'type' => '',
-        ),
-        'vcard:hasURL' => array(
-          'value' => '',
-          'type' => '',
-        ),
-      ),
-      'dcat:Distribution' => array(
-        'odsm_entity_reference' => array(
-          'value' => 'field_resources',
-          'type' => '',
-        ),
-        'dct:title' => array(
-          'value' => '[node:field-resources:Nth:title]',
-          'type' => '',
-        ),
-        'dct:description' => array(
-          'value' => '[node:field-resources:Nth:body]',
-          'type' => '',
-        ),
-        'dct:issued' => array(
-          'value' => '[node:field-resources:Nth:created:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:modified' => array(
-          'value' => '[node:field-resources:Nth:changed:custom:Y-m-d]',
-          'type' => '',
-        ),
-        'dct:license' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dct:rights' => array(
-          'value' => '',
-          'type' => '',
-        ),
-        'dcat:accessURL' => array(
-          'value' => '[node:field-resources:Nth:field-link-api:url]',
-          'type' => '',
-        ),
-        'dcat:downloadURL' => array(
-          'value' => '[node:field-resources:Nth:field_link_remote_file] || [node:field-resources:Nth:field-upload:url]',
-          'type' => '',
-        ),
-        'dcat:mediaType' => array(
-          'value' => '[node:field-resources:Nth:field-upload:mime]',
-          'type' => '',
-        ),
-        'dct:format' => array(
-          'value' => '[node:field-resources:Nth:field-format:name]',
-          'type' => '',
-        ),
-        'dcat:byteSize' => array(
-          'value' => '[node:field-resources:Nth:field-upload:size-raw]',
-          'type' => '',
-        ),
-        'foaf:page' => array(
-          'value' => '[node:field-resources:Nth:url]',
-          'type' => '',
-        ),
-      ),
-    ),
-    'outputformat' => 'json',
-    'endpoint' => 'catalog.json',
-    'arguments' => array(),
-    'xml_root' => '',
-    'xml_defaulttag' => '',
   );
   return $open_data_schema_apis;
 }
